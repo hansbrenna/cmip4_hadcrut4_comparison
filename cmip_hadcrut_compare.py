@@ -34,6 +34,7 @@ Cstd = CMIPa.std(axis='columns')
 fig=plt.figure(figsize=(10,4))
 plt.hold(True)
 
+plt.plot(CMIPa[:2005],linewidth=3,color='0.8')
 plt.plot(Cmean[:2005],linewidth=3,label='CMIP5 mean')
 plt.plot(Cmean[:2005]+Cstd[:2005],color='0.5',linewidth=2,label='CMIP5 std')
 plt.plot(Cmean[:2005]-Cstd[:2005],color='0.5',linewidth=2)
